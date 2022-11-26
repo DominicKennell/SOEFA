@@ -1,6 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
+    background-color: green;
+    color: white;
+    margin-bottom: 15px;
 }
 
 .navbar li{
@@ -11,48 +19,103 @@
 
 .navbar li a{
     text-decoration: none;
-    color: green;
+    color: white;
+    font-weight: 600;
 }
 
 .navbar img{
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
 }
 
 
 .navbar p a{
-    background-color: green;
     color: white;
     font-weight: 600;
     text-decoration: none;
+    padding-right: 35px;
 }
 
-.Community-Larder{
+.logo-cl{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.logo{
     display: flex;
 }
 
-.Community-Larder img{
+.logo img{
+    padding-left: 50px;
+    padding-top: 25px;
     height: 50px;
+}
+
+.logo h2{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.Community-Larder{
+    border-style: solid;
+    border-color: green;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 25px;
+    margin-right: 50px;
+}
+
+.Community-Larder img{
+    padding: 25px;
+    height: 50px;
+}
+
+
+.Community-Larder button{
+    background-color: green;
+    border-radius: 10px;
+    margin: 25px;
+    width: 150px;
+}
+
+.Community-Larder button a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .video{
     padding: 15px;
     background-color: Green;
     color: white;
+    display: flex;
+    border-radius: 10px;
+}
+
+.right {
+    padding: 50px;
 }
 
 .just-giving{
     text-align: center;
-    border-color: green;
+    background-color: green;
     border-style: solid;
     margin-top: 35px;
     margin-bottom: 35px;
     padding-bottom: 15px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
 }
 
 .just-giving button{
-    background-color: green;
+    background-color: transparent;
     border-radius: 10px;
+    border-color: white;
+    padding: 40px;
 }
 
 .just-giving button a{
@@ -65,9 +128,14 @@
     border-style: solid;
     border-color: green;
     padding-bottom: 25px;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: lightgreen;
 }
 
 footer{
+    padding: 15px;
     background-color: green;
     color: white;
+    text-align: center;
 }
