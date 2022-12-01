@@ -1,141 +1,122 @@
-body{
-    margin: 0;
-    padding: 0;
+/* Logo */
+
+.logo-cl{
+    display: grid;
+    grid-column-start: 1fr 1fr;
+    grid-template-areas: "logo communityLarder";
+    justify-content: space-between;
+    padding: 5px 15px;
 }
 
-.navbar{
+.logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+.logo img, .communityLarder img {
+    max-width: 100px;
+    max-height: 100px;
+    padding: 10px 15px;
+}
+
+/* Community Larder */
+
+.communityLarder{
+    grid-area: communityLarder;
+    border: 5px solid green;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.communityLarder button{
+    max-width: 100px;
+    max-height: 100px;
+    padding: 10px 15px;
+    margin: 10px;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+.communityLarder a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Nav Bar */
+
+.navbar {
     display: flex;
     justify-content: space-between;
     background-color: green;
-    color: white;
-    margin-bottom: 15px;
 }
 
 .navbar li{
     list-style: none;
-    display: inline;
-    padding: 10px;
+    display: inline-block;
 }
 
-.navbar li a{
-    text-decoration: none;
+.navbar a{
     color: white;
-    font-weight: 600;
-}
-
-.navbar img{
-    width: 50px;
-    height: 50px;
-}
-
-
-.navbar p a{
-    color: white;
-    font-weight: 600;
     text-decoration: none;
-    padding-right: 35px;
+    padding: 15px;
 }
 
-.logo-cl{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-    margin-bottom: 15px;
-
-}
-
-.logo{
-    display: flex;
-}
-
-.logo img{
-    padding-left: 50px;
-    padding-top: 25px;
-    height: 50px;
-}
-
-.logo h2{
-    padding-left: 30px;
-    padding-top: 20px;
-}
-
-.Community-Larder{
-    border-style: solid;
-    border-color: green;
+.navbar p a {
+    background-color: skyblue;
+    color: black;
     border-radius: 10px;
-    display: flex;
-    margin-bottom: 25px;
     margin-right: 50px;
 }
 
-.Community-Larder img{
-    padding: 25px;
-    height: 50px;
-}
+/* main */
 
+/* Video and text Content */
 
-.Community-Larder button{
-    background-color: green;
-    border-radius: 10px;
-    margin: 25px;
-    width: 150px;
-}
-
-.Community-Larder button a{
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
+.video-text{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    grid-template-areas: "video text-right";
+    margin-top: 10px;
 }
 
 .video{
-    padding: 15px;
-    background-color: Green;
-    color: white;
-    display: flex;
-    border-radius: 10px;
+    grid-area: video;
 }
 
-.right {
-    padding: 50px;
+.right{
+    grid-area: text-right;
+    padding: 20px 30px;
 }
+
+/* Just Giving */
 
 .just-giving{
-    text-align: center;
-    background-color: green;
-    border-style: solid;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    padding-bottom: 15px;
-    color: white;
-    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: 5px solid green;
     border-radius: 10px;
 }
 
 .just-giving button{
-    background-color: transparent;
-    border-radius: 10px;
-    border-color: white;
-    padding: 40px;
-}
-
-.just-giving button a{
-    color: white;
-    text-decoration: none;
-}
-
-.form{
-    text-align: center;
-    border-style: solid;
-    border-color: green;
-    padding-bottom: 25px;
-    border-radius: 10px;
-    margin-top: 15px;
-    background-color: lightgreen;
-}
-
-footer{
-    padding: 15px;
     background-color: green;
+    padding: 30px;
+    margin-left: 20px;
+    border: 5px solid green;
+    border-radius: 10px;
+}
+
+.just-giving a{
+    text-decoration: none;
     color: white;
-    text-align: center;
 }
