@@ -1,3 +1,13 @@
+:root{
+    --greenTheme: green;
+    --greyTheme: grey;
+}
+
+body{
+    font-family: 'Open Sans', sarif ;
+    background-color: rgb(241, 253, 246);
+}
+
 /* Logo */
 
 .logo-cl{
@@ -6,6 +16,7 @@
     grid-template-areas: "logo communityLarder";
     justify-content: space-between;
     padding: 5px 15px;
+    background-color: white;
 }
 
 .logo{
@@ -26,7 +37,7 @@
 
 .communityLarder{
     grid-area: communityLarder;
-    border: 5px solid green;
+    border: 5px solid var(--greenTheme);
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -40,8 +51,18 @@
     max-height: 100px;
     padding: 10px 15px;
     margin: 10px;
-    background-color: green;
-    border: 1px solid green;
+    background-color: var(--greenTheme);
+    border: 1px solid var(--greenTheme);
+    border-radius: 10px;
+}
+
+.communityLarder button:hover{
+    max-width: 100px;
+    max-height: 100px;
+    padding: 10px 15px;
+    margin: 10px;
+    background-color: var(--greyTheme);
+    border: 1px solid var(--greyTheme);
     border-radius: 10px;
 }
 
@@ -55,7 +76,8 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: green;
+    background-color: var(--greenTheme);
+    padding: 25px;
 }
 
 .navbar li{
@@ -67,13 +89,21 @@
     color: white;
     text-decoration: none;
     padding: 15px;
+    font-size: 20px;
 }
 
-.navbar p a {
-    background-color: skyblue;
-    color: black;
-    border-radius: 10px;
-    margin-right: 50px;
+.navbar button{
+    background-color: purple;
+    font-weight: 800;
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+
+.navbar button:hover{
+    background-color: royalblue;
+    font-weight: 800;
+    border: 1px solid royalblue;
+    border-radius: 5px;
 }
 
 /* main */
@@ -104,19 +134,53 @@
     justify-content: center;
     align-items: center;
     padding: 15px;
-    border: 5px solid green;
+    border: 5px solid var(--greenTheme);
     border-radius: 10px;
+    margin-bottom: 25px;
 }
 
 .just-giving button{
-    background-color: green;
+    background-color: var(--greenTheme);
     padding: 30px;
     margin-left: 20px;
-    border: 5px solid green;
+    border: 5px solid var(--greenTheme);
+    border-radius: 10px;
+}
+
+.just-giving button:hover{
+    background-color: var(--greyTheme);
+    padding: 30px;
+    margin-left: 20px;
+    border: 5px solid var(--greyTheme);
     border-radius: 10px;
 }
 
 .just-giving a{
     text-decoration: none;
     color: white;
+}
+
+/* Partners */
+
+.P{
+    border: 3px solid var(--greenTheme);
+    border-radius: 5px;
+}
+
+.P h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.partners img{
+    width: 150px;
+    height: 150px;
+    
 }
